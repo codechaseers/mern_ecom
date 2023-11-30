@@ -1,0 +1,60 @@
+/* filter css */
+.main_container{
+    display: flex;
+    margin:2vmax auto; 
+    margin-top: 2vmax;
+    flex-wrap: wrap;   
+ 
+    /* align-items: center; */
+    
+    /* justify-content: center; */
+  }
+.main_container.filtercontainer{
+    /* position: relative; */
+    /* width:15%;  */
+   
+     font-weight: 500;
+    font-size: large;
+    
+    border: 1px solid red;
+   
+  }
+.products_container{
+    
+    
+    flex-wrap: wrap;display: flex;
+    
+    /* align-items: center; */
+    justify-content: center; 
+    border: 2px solid red;
+}
+  .accordion-item {
+    /* background: #000; */
+    /* border: 2px solid red; */
+    /* background: linear-gradient( rgb(255, 255, 255,0.6),rgba(246, 247, 249, 0.6)); */
+    /* background-color: rgba(225, 225, 225, 0.1); */
+   
+    
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));   */
+    /* backdrop-filter: blur(10px);   */
+  }
+  .filter h2{
+    font-size: large;
+  }
+
+  /* filter category styile */
+
+  .category_list{
+    list-style: none;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .category_list:hover{
+    font-weight: 600;
+    color: rgb(23, 68, 247);
+ 
+    transform: translateX(1vmax);
+    text-shadow: 3px;
+    cursor: pointer;
+    
+  }

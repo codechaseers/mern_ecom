@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login{
+     font-size: 1.1rem;
+    width: 40vmax;
+    height: 20vmax;
+    /* border: 2px solid rgb(0, 0, 0) !important; */
+    transition: all,0.3s;
+    margin-top: 5rem;
+    margin-bottom: 3rem; 
+    padding: 2em;
+   color: rgb(23, 129, 222);
+    /* background: linear-gradient( rgba(126, 123, 123, 0.4),rgba(202, 184, 184, 0.7)); */
+    /* box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3); */
+    box-shadow:  0.3em 0.2em 10px -2px;  
+    
+}
+.logininput{
+/* border: 2px solid black; */
+}
+.bottom_navlinks{
+ margin: 0.3em;
+ text-decoration: none;
+ font-size: 1em;
+  
+}
+.label:hover{
+color: blueviolet;
+transform: translateX(1vmax);  
+}
+.bottom_navlinks:hover{
+color: blueviolet;
+  
+}
+#register_icon{
+    /* outline: auto; */
+    filter: drop-shadow( 0.3em 0.1em 3px #0D6EFD);
+}
+.avtar_container{
+    display: flex;
+    /* outline: auto; */
+    justify-content: center;
+    align-items: center;
+}
+.avtar_container> input::file-selector-button{
+    cursor: pointer;
+    border: none;
+    width: 7em;
+    height: 2em;
+    color: rgb(255, 255, 255);
+    background: #0D6EFD;
+    margin-top:1em ;
+    margin-left:1em ;
+    border-radius: 6px;
+    font-weight: 400;
+}
+ 
+ 
+ 
+
+.avtar_preview > img{
+   
+    width: 9vmax;
+    /* border: 2px solid black; */
+  
+    height: 8vmax;
+    border-radius: 50%;
+    filter: drop-shadow(8px   2px 3px  rgba(7, 7, 7, 0.3));
+   
+}

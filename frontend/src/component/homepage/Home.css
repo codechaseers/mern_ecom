@@ -1,0 +1,127 @@
+
+.home{
+   background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("./baner.jpg");
+     background-size: cover;
+ 
+     background-position:center;
+     background-repeat:no-repeat;
+   
+  
+     max-width:100%;
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);
+  
+    margin-top: 5px;
+    
+    /* border: 2px solid red; */
+   }
+   .home2{
+   
+   /* display: flex; */
+   background: linear-gradient( rgb(40, 38, 38,0.6),rgba(18, 18, 207, 0.6));
+   /* background-color: #fff; */
+  
+    height:93vmin;
+     
+    /* box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);*/
+   
+    /* clip-path: polygon(0 100%, 100% 2%, 100% 100%, 13% 100%); */
+    clip-path: polygon(0 88%, 100% 23%, 100% 100%, 0 100%); 
+   
+    
+    
+   }
+ 
+ 
+   .heading{   
+     
+    text-align: center;
+    color: azure;
+    
+    width: 50vmax;
+   
+    /* border: 2px solid rgb(13, 25, 100); */
+    padding-top: 10%;
+    padding-left: 1vmax;
+    /* margin-top: 3vmax; */
+    word-wrap: break-word;
+  }
+  .heading > h1{
+  text-overflow: clip;
+  text-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);
+   color: rgb(243, 247, 247);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 3vmax;
+ }
+ 
+ .heading > h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(12, 109, 213);
+}
+ .heading > p{
+  font-weight: 400;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .heading> a >button{
+ font-family:'Times New Roman', Times, serif;
+  height:2em ;
+  width:6em ;
+  font-size: 1.5em;   
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all,0.7s;
+  border: 1px solid rgb(255, 253, 253);
+  background:rgba(34, 34, 32, 0.4);
+ color: #fff;
+  margin-top: 3vmax;
+  text-align: center;
+ }
+ .heading> a > button:hover{
+  height:2em ;
+  width:6em ;
+  font-size: 1.5em;  
+  font-weight: 500;
+  color: #000000; 
+  background: #fff;
+ 
+ }
+ .home_heading{
+  box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);
+  text-align: center;
+  /* border-bottom: 1px solid rgba(34, 34, 32, 0.4); */
+  margin: 4vmax auto;
+  width: 24vmax;
+  color:rgba(34, 34, 32, 0.8);
+ 
+ }
+.product_container{
+  display: flex;
+  margin:2vmax auto; 
+  margin-top: 2vmax;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards{
+  width: 20vmax;
+  
+  transition: all,0.3s;
+  /* border: 2px solid red; */
+  margin-top: 2vmax;
+ }
+ .cards:hover{ 
+  box-shadow: 3px  1px 8px  0.3px rgba(0,0,0,.3);
+  transform: translateY(-1vmax);
+  color: #000000;
+ }
+ .productlink{
+  text-decoration: none;
+  color: #000000;
+ }
+ .pagination{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+ }
+
+
+ 

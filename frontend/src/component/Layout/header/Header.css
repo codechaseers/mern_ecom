@@ -1,0 +1,73 @@
+
+ .nevabar_ecome{
+ 
+    color:red;
+ 
+    /* height: 80px; */
+    /* height: fit-content; */
+    min-height: 90px;
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.7);
+ }
+  
+  input.search{
+  border-radius: 3px;
+  box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);
+  width: 20rem;
+  }
+
+  button.search{
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);
+    color: aliceblue;
+    font-size: medium ;
+    font-weight: 400 ;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  .liitems{
+    text-align: center;
+  }
+ .nav-link.active{
+  color:rgb(0, 0, 0) !important;
+   
+  }
+  .nav-link{
+    /* color:rgb(179, 0, 0) !important; */
+    color: aliceblue !important;
+    font-size: large !important;
+    font-weight:546 !important;
+    font-family:  Helvetica, sans-serif !important;
+   
+  }
+   
+ 
+
+  /* <<<< Phone  >>>> */
+  @media (max-width: 415px) {
+  input.search{
+    border-radius: 3px;
+    /* border: 2px solid red; */
+    /* min-width: 5rem; */
+    width: 15rem;
+    margin-left: 1rem;
+  }
+  } 
+  /* <<<< Small Iphone  >>>> */
+  
+  @media (max-width: 320px) {
+  input.search{
+    border-radius: 3px;
+    /* border: 2px solid rgb(12, 12, 12); */
+    /* min-width: 5rem; */
+    width: 13rem;
+  }
+  }
+  /* <<<< Ipad  >>>> */
+  @media (max-width: 834px ) and (min-width:420px){
+  input.search{
+    border-radius: 3px;
+    /* border: 2px solid rgb(12, 12, 12); */
+    /* min-width: 5rem; */
+    width: 24rem;
+    margin-left: 10rem;
+  }
+  }
+  
