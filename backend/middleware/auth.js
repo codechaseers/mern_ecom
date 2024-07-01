@@ -6,13 +6,14 @@ const usermodel = require("../modeles/usermodels");
 const isAuthUser = async (req, res, next) => {
   try {
     const token = req.cookies.token;
-    // console.log(token);
+    console.log(token);
     if (!token) {
       res.status(401).json({
         message: "please login first to access thise resource ",
       });
     }
     const decodeddata = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(decodeddata);
 
     //first decode and verify the token using jwt verify method
 

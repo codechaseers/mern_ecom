@@ -5,7 +5,7 @@
 const productmodle = require("../modeles/productmodles");
 const Apifeatures = require("../utils/apifeatures");
 
-// CREAT PRODUCT --ADMIN
+// --------------------- CREAT PRODUCT --ADMIN -----------------
 
 const creatProduct = async (req, res, next) => {
   try {

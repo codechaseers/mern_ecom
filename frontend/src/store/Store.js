@@ -9,7 +9,10 @@ import {Creatpassword}  from "../reduser/Forgetpasreduser"
 import {Setnewpassword}  from "../reduser/Newpassword"
 import { Cartproducts } from "../reduser/Addtocartreducer";
 import { Allcartproducts } from "../reduser/Cartitemsreduser";
-export const store =configureStore({
+export const store =configureStore(
+    
+    {
+    
     reducer:{
         allproducts:Product.reducer,
         pdetails:Productdetail.reducer,
@@ -22,5 +25,7 @@ export const store =configureStore({
         cartitems:Cartproducts.reducer,
         Allcartproducts:Allcartproducts.reducer,
        
-    }
+    },
+    //it disable the devtools 
+    devTools: false,
 })

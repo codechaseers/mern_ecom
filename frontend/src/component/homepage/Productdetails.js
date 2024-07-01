@@ -45,8 +45,16 @@ let loginuser = useSelector((state) => {
   });
   console.log(data);
 //toast  message for tostify
-  const notify = (message) =>
+  const notify = (message ) =>
   toast.info(  message, {
+    position: "top-center",
+    theme: "colored",
+    style: { width: "400px" },
+    // icon:<img width="50" height="50"src={img3}></img>,
+   
+  }); 
+   const notifySucess = (message ) =>
+  toast.success(  message, {
     position: "top-center",
     theme: "colored",
     style: { width: "400px" },
@@ -73,7 +81,7 @@ let loginuser = useSelector((state) => {
     if (loginuser.isAuthenticated) {
       
       dispatch(Addtocart({product_id:p_id,product_Name:p_name,product_Price:p_price,product_Image:p_image,quantity:p_quantity})); 
-      notify("Your Product is Added ➡️");
+      notifySucess("Your Product is Added ➡️");
       setalert(true)      // this state is use for overcome the reptation
     }
     else{
@@ -163,7 +171,7 @@ let loginuser = useSelector((state) => {
                 />
                 <button className="quantity_btn btn" onClick={incriment}>+</button>
              
-                <button className=" mt-3 mx-3  search btn btn-warning" type="button" onClick={()=>Productadd(product._id,product.name,product.price,"url",value)}>
+                <button className=" mt-3 mx-3  search btn btn-warning" type="button" onClick={()=>Productadd(product._id,product.name,product.price,product.images&&product.images[0].url,value)}>
                   <FaShoppingCart className="cart_icon" size={"1.2rem"} />
                   Add to Cart
                 </button>

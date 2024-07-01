@@ -52,3 +52,28 @@ try {
     
 }
 }
+exports.deleteCartItem = async (req, res, next) => {
+  try {
+    let item = await addtocart_model.findByIdAndDelete(req.body.id);
+    if(item){
+    res.status(200).json({
+      status: true,
+      item,
+      message: "item removed sucessfuly",
+    });
+  }
+  else{
+    res.status(500).json({
+      status: false,
+  
+      message: "item alredy deleted",
+    }); 
+  }
+  } catch (error) {
+    
+    res.status(500).json({
+      status: false,
+      message: "item  not found",
+    });
+  }
+};

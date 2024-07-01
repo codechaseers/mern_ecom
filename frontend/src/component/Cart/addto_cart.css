@@ -68,8 +68,9 @@
     /* position: absolute;
     right: 2px; */
     
-    border-top:3px solid #d1e83c;
-    width: 50vmax;
+    border-top:5px solid #09125676;
+    width: 49.2vw;
+    border-radius: 12px;
   
 }
 .main_bootom{
@@ -104,4 +105,20 @@
 }
 .confirm{
     width: 10em;
+}
+
+.noproductFoundMaindiv{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.emptycart_image>img{
+    width: 22em;
+ 
+    /* outline: auto; */
+}
+.remove:hover{
+    cursor:pointer;
 }

@@ -18,6 +18,7 @@ const Products = () => {
 
     Setprice(newprice)
 
+
   }
 
 
@@ -50,7 +51,7 @@ const Products = () => {
 
   // get data from store using useselecter
   setTimeout(() => {
-    
+
   }, 2000);
   const data = useSelector((state) => {
     return state.allproducts;
@@ -79,11 +80,10 @@ const Products = () => {
 
 
       <ToastContainer />
- 
-      {/* <h2>Products page</h2> */}
-      <div className="main_container" id="main_container">
 
-        <div className="filtercontainer">
+      {/* <h2>Products page</h2> */}
+      <div className="productMainContainer">
+      <div className="filtercontainer">
           <div className="accordion accordion-flush " id="accordionFlushExample">
             <div className="accordion-item ">
               <h2 className="accordion-header">
@@ -122,10 +122,14 @@ const Products = () => {
                 </ul>
 
               </div>
-              
+
             </div>
           </div>
-        </div>
+        </div>   
+                   
+      <div className="productsMain_container" id="main_container">
+       
+
 
         {/* <div className="products_container"> */}
         {useEffect(() => {
@@ -156,6 +160,9 @@ const Products = () => {
         }
       </div>
       {/* </div> */}
+     
+      </div>
+
       <div className="pagination">
         {/* onchage function for get cuuret page */}
 
@@ -163,9 +170,6 @@ const Products = () => {
           count={Math.round(data.products.productCount / data.products.result_per_page)} color="primary"
           onChange={(even, newPage) => Setcurentpage(newPage)} />
       </div>
-
-
-
     </>
   )
 }

@@ -119,6 +119,10 @@ const loginUser = async (req, res) => {
     }
   } catch (error) {
     // console.log(error);
+    res.status(403).json({
+      sucess: false,
+      message: " internal server erroor",
+    });
   }
 };
 

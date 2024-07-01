@@ -22,7 +22,7 @@
     display: none;
     transition: all,0.3s;
     
-    /* border: 2px solid red; */
+    border: 2px solid rgb(29, 243, 186);
   
     padding: 0.5vmax;
    
@@ -32,6 +32,12 @@
   /* outline: auto; */
 }
 .edit_detailss{
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: center;
+  
+   
   /* outline: auto; */
 }
 .image_container{
@@ -53,10 +59,10 @@
 
 }
   .profile_images > img{
-        width: 23vmax;
+        width: 21vmax;
         /* border: 2px solid black; */
         margin: 0.9em;
-        height: 23vmax;
+        height: 21vmax;
         border-radius: 50%;
         filter: drop-shadow(8px   2px 3px  rgba(7, 7, 7, 0.3));
        

@@ -82,8 +82,8 @@ const Profile = () => {
                 <div className="user_container"> */}
 
             <h2 className="user_heading">My profile</h2>
-            <div className="user_container   ">
-                <div className={hide}>
+            <div className="user_container">
+                <div className={hide }>
                     {/* <Card.Img
                             className="card_image w-25 rounded-circle mx-2 card-img-top"
                             variant=""
