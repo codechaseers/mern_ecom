@@ -21,7 +21,10 @@ cloudinary.config({
 dbconn()
 
 
-
+app.get('/',(req,res)=>{
+    console.log("server start");
+    res.status(200).json( {"message":"hii form the ecommerse server"})
+})
 // server port define using env variable
 app.listen(process.env.PORT, () => {
     console.log("server is working on port:" + process.env.port);
