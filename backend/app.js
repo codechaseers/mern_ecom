@@ -20,7 +20,7 @@ app.use(bodyparser.urlencoded({limit: '50mb',extended:true}))
 app.use(fileupload())
 app.use(product);
 app.use(user);
-app.use(order);
+app.use(order); 
 app.use(addtocart);
 app.use(useraddress);
 

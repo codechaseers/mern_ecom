@@ -1,5 +1,9 @@
 const mongoes = require("mongoose")
-
+ 
+const dotenv = require('dotenv');
+const { log } = require("console");
+dotenv.config();
+console.log(process.env.DB_URL);
 const connectionDb = () => {
     mongoes.connect(process.env.DB_URL, {
 

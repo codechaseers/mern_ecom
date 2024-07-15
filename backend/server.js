@@ -1,31 +1,33 @@
-const app = require('./app.js')
+const express = require('express');
+const app = require("./app")
 const dotenv = require('dotenv');
-const { path } = require('./app.js');
-const dbconn=require("./config/db_conn")
-const cloudinary=require("cloudinary").v2
+const dbconn = require('./config/db_conn');
+const cloudinary = require('cloudinary').v2;
 
-// cloudnary config for using file upload image video etc ...
-dotenv.config({ path: "backend/config/config.env" })
+// Load environment variables
+dotenv.config( );
 
-cloudinary.config({
-    cloud_name:  process.env.CLOUDNARY_NAME,
-    api_key:  process.env.CLOUDNARY_API_KEY,
-    api_secret:  process.env.CLOUDNARY_API_SECRET,
-    secure:true
-   
-})
+// Cloudinary configuration
+cloudinary.config({ 
+    cloud_name: process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+    secure: true
+});
 
-// config path
+// Database connection
+dbconn();
 
-// conection functioun call
-dbconn()
+// Define a simple route
+app.get('/', (req, res) => {
+    console.log('Server started');
+    res.status(200).json({ message: 'Hi from ecomeerse the server' });
+});
 
+// Server port defined using environment variable
+const PORT = process.env.PORT || 5000; // Default to port 5000 if PORT is not specified
 
-app.get('/',(req,res)=>{
-    console.log("server start");
-    res.status(200).json( {"message":"hii form the ecommerse server"})
-})
-// server port define using env variable
-app.listen(process.env.PORT, () => {
-    console.log("server is working on port:" + process.env.port);
-})
+app.listen(PORT, () => {
+    console.log(`Server is working on port: ${PORT}`);
+    // console.log(process.env.DB_URL);
+});
