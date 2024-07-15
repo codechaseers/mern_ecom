@@ -38,6 +38,7 @@ const getAllproducts = async (req, res) => {
     .pageination(result_per_page)
      
   const allproducts = await apifeatures.query;
+  // console.log(allproducts)
 
   res.status(200).json({
     status: true,
